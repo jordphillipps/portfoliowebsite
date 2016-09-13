@@ -124,6 +124,25 @@ h6 {
 	word-spacing: 3px;
 }
 
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
 /* ----Buttons---*/
 
 .btn:link, 
@@ -458,49 +477,81 @@ header {
 /* Footer */
 /* ---------------------------------------------*/
 
-
 footer {
-    width: 100%;
-    float: left;
-    padding: 80px 0;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+
+	background-color: #333;
+	padding: 40px;
+	font-size: 80%;
 }
 
-footer .foot {
-    float: left;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+.footer-nav {
+	list-style: none;
+	float: left;
 }
 
-footer .foot p {
-
-    width: 100%;
-    float: left;
-    font-size: 70%;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #555;
-    line-height: 28px;
-    border-top: 1px solid #e67e22;
-    padding: 38px 0 0;
-    letter-spacing: 5px;
+.social-links {
+	list-style: none;
+	float: right;
 }
 
+.footer-nav li, 
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
 
+.footer-nav li:last-child, 
+.social-links li:last-child {
+	margin-right:0;
+}
 
+.footer-nav li a:link, 
+.footer-nav li a:visited,
+.social-links li a:link, 
+.social-links li a:visited  {
+	text-decoration: none;
+	border: none;
+	color: #888;
+	transition: color 0.2s;
 
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+
+	color: #ddd;
+}
+
+.social-links li a:link, 
+.social-links li a:visited {
+	font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-github {
+	transition: color: 0.2s;
+}
+
+.ion-social-facebook:hover {
+	color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+	color: #55acee;
+}
+
+.ion-social-github:hover {
+	color: #000000;
+}
+
+footer p {
+
+	color: #888;
+	text-align: center;
+	font-size: 90%;
+	margin-top: 20px;
+}
 
 
 /* Media Queries */
@@ -537,6 +588,11 @@ html {
 	.row {
 	max-width: 95%;
 	margin: 0 auto;
+	}
+
+	.col {
+		width: 100%;
+		margin: 0 0 4% 0%;
 	}
 	
 	.logo {
@@ -577,6 +633,9 @@ html {
 		font-size: 70%;
 	}
 
+	.contact-form {
+		width: 100%;
+	}
 
 
 
