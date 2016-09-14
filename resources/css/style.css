@@ -593,11 +593,7 @@ html {
 	}
 	
 	.logo {
-	float: left;
-	padding-top: 20px;
-	margin-top: 0;
-	margin-left: 1px;
-	width: 60%;
+	display: none;
 	}
 
 	.main-nav {
