@@ -477,8 +477,9 @@ header {
   color: #ccc;
   font-size: 80%;
 }
-
-*:focus {outline: none;
+ input[type=text]:focus,
+ input[type=email]:focus,
+ textarea:focus {outline: none;
     
     box-shadow: 0 0 3px #e67e22;}
 
