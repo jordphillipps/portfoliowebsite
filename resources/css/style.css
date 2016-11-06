@@ -394,6 +394,9 @@ header {
 
 /* About Me */
 /* ---------------------------------------------*/
+
+
+
 .contact-card {
 	height: 480px; 
 	width: 100%;
@@ -685,6 +688,35 @@ html {
 	margin: 0 auto;
 	align-items: center;
 	}
+
+.about-box {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+.about-box .imageWrap {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 0 80%;
+    position: relative;
+}
+
+.about-box .imageWrap .image {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-box .text {
+    width: 100%;
+    height: auto;
+    padding: 80px;
+}
+
 }
 
 
